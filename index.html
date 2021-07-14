@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test HTML</title>
+  <link href="./test.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="header">
+      <div class="logo">LOGO</div>
+      <div class="nav-item">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Conact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <div class="banner">
+
+    <div class="cardBox">
+
+      <div class="card">
+        <div class="face front">
+          <h2>Fornt</h2>
+          <p> this is my card. Which is 3d</p>
+        </div>
+        <div class="face back">
+          <h2>Back</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <h2>Fornt</h2>
+          <p> this is my card. Which is 3d</p>
+        </div>
+        <div class="face back">
+          <h2>Back</h2>
+        </div>
+      </div>
+    </div>
+  
+
+  </div>
+
+
+
+  <script type="text/javascript">
+  (function(){
+    window.addEventListener('scroll',function(){
+      let header = document.querySelector('.header');
+      header.classList.toggle('sticky',window.scrollY >0);
+    });
+  }());
+  </script>
+</body>
+
+</html>
